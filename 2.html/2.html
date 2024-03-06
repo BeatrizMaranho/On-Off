@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.css">
+    <title>dark mode</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="body">
+    <div id="box">
+        <h4 id="h4"><b>Dark mode On/Off</b></h4>
+        <p id="active" onclick="abc()"><i class="fa-light fa-eye"></i></p>
+        <p id="unactive" onclick="bca()"><i class="fa-light fa-eye-slash"></i></p>
+    </div>
+
+    <p> &copy;2023 | v2.0 | Create by Beatriz Maranho</p>
+
+    <script>
+        function abc(){
+            document.getElementById('active').style.display="none";
+            document.getElementById('unactive').style.display="block";
+            document.getElementById('body').style.background="whitesmoke";
+            document.getElementById('box').style.background="#fff";
+            document.getElementById(h4).style.color="steelblue";
+        }
+
+        function bca(){
+            document.getElementById('unactive').style.display="none";
+            document.getElementById('active').style.display="block";
+            document.getElementById('body').style.background="#333";
+            document.getElementById('box').style.background="#444";
+            document.getElementById('h4').style.color="#3fa";
+        }
+    </script>
+
+</body>
+
+</html>
